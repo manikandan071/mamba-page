@@ -17,6 +17,12 @@
     display: flex;
     height: 495px;
 }
+
+
+
+/* ------------about section start----------- */
+
+
 .about-section{
     padding-bottom: 30px;
 }
@@ -66,6 +72,11 @@
 .aboutpara{
     line-height: 25px;
 }
+
+/* ---------------------about section ends---------- */
+/* -------features section starts------------------ */
+
+
 .features-list-a, .features-list-b{
     display: flex;
     width: 100%;
@@ -113,6 +124,12 @@
     font-family:  "Raleway", sans-serif;
     font-size: 25px;
 }
+
+/* ---------------features sec ends--------------------- */
+
+/* ---------------clients sec starts--------------------- */
+
+
 .clients{
     background-color: #f5f9fc;
     padding-top: 60px;
@@ -146,6 +163,12 @@
     font-family: "Raleway", sans-serif;
     text-transform: capitalize;
 }
+
+/* --------------clients sec ends---------------------- */
+
+/* --------------services sec starts---------------------- */
+
+
 .services{
     padding-top: 40px;
     padding-bottom: 40px;
@@ -211,6 +234,8 @@
     box-shadow: 0 0 20px #428bca;
 } 
 
+/* -------------services sec ends----------------------- */
+
 /* about section icon insert................ */
 
 
@@ -243,9 +268,34 @@
 
 /* portfolio section start............ */
 
+.portfolio{
+    background-color: #f5f9fc;
+}
+
+.portfolio-title h2{
+    display: flex;
+    justify-content: center;
+    font-size: 35px;
+    color: #5c768d;
+    font-family: "Open Sans", sans-serif;
+    padding-top: 70px;
+}
+
+.portfolio-title p{
+    display: flex;
+    justify-content: center;
+    font-family: "Open Sans", sans-serif;
+    color: #444;
+    font-size: 16px;
+    line-height: 30px;
+    text-align: center;
+}
+
+
 .flex-portfolio{
     display: flex;
     flex-wrap: wrap;
+    padding-bottom: 80px;
 }
 .portfolio-box{
     width: 33.33%;
@@ -262,6 +312,7 @@
     display: block;
     width: 100%;
     height: auto;
+    transition: all 0.5s ease;
    
 }
 .portfolio-text{
@@ -275,7 +326,7 @@
     justify-content: center;
     align-items: center;
     opacity: 0;
-    transition: all 0.4s ease; 
+    transition: all 0.5s ease; 
 }
 .portfolio-first-text{
     transform: translateY(-20px);
@@ -287,25 +338,29 @@
 }
 
 
-.portfolio-first-text h4{
-    
-    font-size: 20px;
+.portfolio-first-text h4{ 
+    font-size: 22px;
+    display: flex;
     color: #fff;
     font-family: "Open Sans", sans-serif ;
     text-align: center;
+    justify-content: center;
+    margin-bottom: 5px;
 }
 .portfolio-first-text p{
-     
-    font-size: 17px;
+    display: flex; 
+    justify-content: center;
+    font-size: 14px;
     color: rgb(255, 255, 255);
     font-family: "Open Sans", sans-serif ;
     text-align: center;
-    margin-bottom: 30px;
+    margin-bottom: 17px;
+    margin-top: 15px;
 }
 
 .portfolio-link{
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     margin-top: 5px;
 }
 
@@ -317,14 +372,14 @@
     text-align: center;
     margin-left: 5px;
     margin-right: 5px;
-    width: 40px;
-    height: 40px;
+    width: 35px;
+    height: 35px;
     border-radius: 100%;
     background-color: rgb(255, 255, 255);
-    line-height: 40px;
+    line-height: 35px;
     align-items: center;
     transition: all 0.5s ease;
-     
+    font-size: 18px;
 }
 .portfolio-content:hover .portfolio-text{
     opacity: 1;
@@ -332,11 +387,228 @@
 .portfolio-content:hover img{
     transform: scale(1.1);
 }
-.portfolio-link a:hover .portfolio-link a{
-    background-color: #1a1f24;
-}
-/* .portfolio-link:hover a i{
+.portfolio-link a:hover {
+    background-color: blueviolet;
     color: #fff;
-}  */
+}
 
+
+/* -------------fortfolio sec ends----------------------- */
+
+/* -------------our team section start------------------ */
+
+.profile-title h2{
+    font-size: 35px;
+    color: #5c768d;
+    display: flex;
+    justify-content: center;
+    font-family: "Raleway", sans-serif,"Open Sans", sans-serif;
+    padding-top: 25px;
+}
+.profile-title p{
+    display: flex;
+    justify-content: center;
+    font-family: "Open Sans", sans-serif;
+    color: #444;
+}
+
+.flex-profile{
+    display: flex;
+    flex-wrap: wrap;
+    padding-bottom: 80px;
+}
+.profile-box{
+    width: 25%;
+    
+}
+.profile-sec{
+    position: relative;
+    padding: 13px;
+   
+}
+.profile-sec:hover .profile-pic img{
+    transform: scale(1.1);
+}
+.profile-pic{
+    overflow: hidden; 
+    border-radius: 5px;
+}
+.profile-pic img{
+    width: 100%;
+    height: auto;
+    transition: all 0.5s ease;
+    border-radius: 5px;
+}
+.profile-bio{
+    position: absolute;
+    left: 36px;
+    bottom: -35px;
+    width: 75%;
+    background-color: rgba(92, 118, 141, 0.9);
+    display: block;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 5px;
+    padding-bottom: 10px;
+}
+
+.profile-bio h4{
+    font-size: 17px;
+    font-family: "Raleway", sans-serif;
+    color: #fff;
+    margin-bottom: 10px;
+    margin-top: 15px;
+}
+.profile-bio .name-ul{
+    width: 60px;
+    height: 1px;
+    background-color: #fff;
+    margin-left: 70px;
+}
+.profile-bio p {
+    color: #fff;
+    font-size: 13px;
+    font-family: "Open Sans", sans-serif;
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+.profile-icon a{
+    text-decoration: none;
+    color: #fff;
+}
+.profile-icon a:hover{
+    color: #87a5be;
+}
+
+/* --------our team sec ends------------------------ */
+
+
+/* ------------faq sec start---------------------- */
+
+.faq-section{
+    background-color: #f5f9fc;
+}
+
+
+.faq-title h2{
+    font-size: 35px;
+    padding-top: 50px;
+    color: #5c768d;
+    display: flex;
+    justify-content: center;
+    font-family: "Raleway", sans-serif,"Open Sans", sans-serif;
+}
+
+.flex-faq{
+    display: flex;
+    flex-wrap: wrap;
+}
+.faq-box{
+    width: 50%;
+}
+.faq-sec{
+    padding: 10px;
+    margin-bottom: 10px;
+}
+.faq-sec h4{
+    display: flex;
+    font-size: 20px;
+    font-family: "Open Sans", sans-serif,"Raleway", sans-serif;
+    color: #1f3548;
+    line-height: 27px;
+    margin-bottom: 15px;
+}
+.faq-sec p{
+    font-size: 17px;
+    font-family: "Open Sans", sans-serif;
+    line-height: 25px;
+    color: #444;
+}
+
+/* ---------------faq sec ends--------------------- */
+
+/* --------------contact us starts---------------------- */
+
+.flex-contact-us{
+    display: flex;
+}
+.address-box{
+    width: 50%;
+    padding: 10px;
+}
+.address-box-content{
+    display: block;
+    justify-content: center;
+    text-align: center;
+    box-shadow: 0 0 30px rgb(214 215 216 / 60%);
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+.address-box-content i{
+    font-size: 25px;
+    color: #428bca;
+    border: 2px dotted #9eccf4;
+    border-radius: 100%;
+    padding: 6px;
+}
+.email-box{
+    width: 25%;
+    padding: 10px;
+}
+.call-box{
+    width: 25%;
+    padding: 10px;
+}
+.address-box-content h4{ 
+    font-size: 22px;
+    color: #666;
+    font-family: "Raleway", sans-serif;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+.address-box-content p{
+    line-height: 25px;
+    margin-top: 10px;
+    font-size: 15px;
+    font-family: "Open Sans", sans-serif;
+    color: #444;
+}
+.email-box p{
+    margin-bottom: 0;
+} 
+.call-box p{
+    margin-bottom: 0;
+}
+.address-box p{
+    padding-bottom: 10px;
+}
+.flex-contact-us{
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+
+/* -------form section------ */
+
+.form-sec{
+    display: flex;
+    flex-wrap: wrap;
+}
+.type50{
+    width: 50%;
+}
+.type100{
+    width: 100%;
+}
+.user-input{
+    width: 100%;
+    height: 25px;
+    border: solid 1px #ccc;
+}
+.from-group{
+    margin-bottom: 20px;
+}
+.from-group textarea .user-input{
+    height: 80px;
+}
 
