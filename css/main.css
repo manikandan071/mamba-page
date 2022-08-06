@@ -42,6 +42,7 @@
     font-size: 22px;
     padding-top: 10px;
     color: #444;
+    font-family: "Open Sans", sans-serif;
 }
 .quick-access-manu > .manu-nav > li{
     display: inline;
@@ -99,12 +100,14 @@
     display: flex;   
     color: #fff;
     font-size: 40px;
+    font-family: "Open Sans", sans-serif;
 }
 .banner-details p{
     color: #fff;
     padding-top: 30px;
     line-height: 25px;
     font-size: 17px;
+    font-family: "Open Sans", sans-serif;
 }
 .banner-details button{
    background-color: #428bca;
@@ -548,10 +551,13 @@
 .profile-pic{
     overflow: hidden;
     border-radius: 5px;
+    text-align: center;
 }
-.profile-pic img{
+.team-profile{
     width: 100%;
     height: auto;
+}
+.profile-pic img{
     transition: all 0.5s ease;
     border-radius: 5px;
     
@@ -559,29 +565,26 @@
 .profile-bio{
     position: absolute;
     left: 36px;
-    bottom: -35px;
-    width: 75%;
-    background-color: rgba(92, 118, 141, 0.9);
-    display: inline;
-    justify-content: center;
-    align-items: center;
+    right: 36px;
+    bottom: -20px;  
+    background: linear-gradient(360deg, rgb(92, 118, 141) 0%, rgba(92, 118, 141, 0.9) 35%, rgba(140, 167, 191, 0.8) 100%);
+    display: inline-block;
     text-align: center;
     border-radius: 5px;
-    padding-bottom: 10px;
+    padding-bottom: 15px;
+    padding-top: 10px;
 }
 
 .profile-bio h4{
     font-size: 17px;
     font-family: "Raleway", sans-serif;
     color: #fff;
-    margin-bottom: 10px;
-    margin-top: 15px;
 }
 .profile-bio .name-ul{
-    width: 60px;
+    width: 50px;
     height: 1px;
     background-color: #fff;
-    margin-left: 75px;
+    margin: 5px auto;
 }
 .profile-bio p {
     color: #fff;
@@ -864,8 +867,10 @@
 .footer-form{
     display: flex;
     padding-top: 30px;
+    padding-right: 10px;
 }
 .footer-email{
+    width: 100%;
     padding:0 35px;
     height: 40px;
     border: 0;
