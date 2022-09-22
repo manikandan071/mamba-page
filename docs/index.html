@@ -5,8 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MAMBA</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/icofont.min.css">
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/responsive.css">
 </head>
 <body>
     <!--quick-contact starts-->
@@ -19,7 +21,7 @@
             </a>
             <i class="icofont-stock-mobile"></i><span>+1 5589 55488 55</span>
         </div>
-        <div class="socia-contact">
+        <div class="socia-contact d-none d-md-block">
             <a href="#"><i class="icofont-twitter"></i></a> 
             <a href="#"><i class="icofont-facebook"></i></a> 
             <a href="#"><i class="icofont-instagram"></i></a> 
@@ -28,7 +30,7 @@
     </div>
 </div>
 </section>
-<section class="manu-bar">
+<!-- <section class="manu-bar">
     <div class="container">
     <div class="flex-quick-access">
             <h2>MAMBA</h2>
@@ -53,7 +55,52 @@
             </div>
     </div>
     </div>
-    </section>
+    </section> -->
+
+    <div class="quick-access">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-light bg-white p-0">
+            <div class="container-fluid logo pt-2 pb-2">
+              <a class="navbar-brand active " href="#">MAMBA</a>
+              <button class="navbar-toggler p-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse manu-list" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link first" href="#">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">About</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Services</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Portfolio</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">team</a>
+                  </li>
+                  <li class="nav-item dropdown drpdown"><a class="nav-link dropdown-toggle" href="#">Dropdown</a>
+                    <ul class="droplink">
+                      <li><a href="#">Dropdown 1</a></li>
+                      <li><a href="#">Deep Dropdown</a></li>
+                      <li><a href="#">Dropdown 2</a></li>
+                      <li><a href="#">Dropdown 3</a></li>
+                      <li><a href="#">Dropdown 4</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Contact</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+        </div>
+    </div>
+
 
     <!--quick-acess ends-->
     <!--banner starts-->
@@ -76,11 +123,11 @@
     <!--about-section starts-->
     <section class="about-section">
         <div class="container">
-            <div class="flex-about-section">
-                <div class="about-section-image">
-                    <img class="aboutimage" src="about.jpg" alt="aboutimage">
+            <div class="row flex-about-section">
+                <div class="col-lg-6 col-md-12 about-section-image">
+                    <img class="aboutimage" src="images/about/about.jpg" alt="aboutimage">
                 </div>
-                <div class="about-section-text">
+                <div class="col-lg-6 col-md-12 about-section-text">
                     <div class="about-text-title">
                         <h2>About Us</h2>
                         <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea</p>
@@ -96,7 +143,7 @@
                                <p>Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident</p>   
                             </div>
                     </div>
-                    <div class="about-list">
+                    <div class="about-list mb-5">
                         
                             <div class="about-icon">
                                 <i class="icofont-gift"></i>
@@ -118,34 +165,31 @@
     <section class="features">
         <div class="container">
             <div class="flex-features">
-                <div class="features-list-a">
-                    <div class="features-list">
+                <div class="row features-list-a">
+                    <div class="col-lg-4 col-md-6 features-list">
                         <span>01</span>
                         <h3>Lorem Ipsum</h3>
                         <p class="features-para">Ulamco laboris nisi ut aliquip ex ea commodo consequat. Et consectetur ducimus vero placeat</p>
                     </div>
-                    <div class="features-list">
+                    <div class="col-lg-4 col-md-6 features-list">
                         <span>02</span>
                         <h3>Repellat Nihil</h3>
                         <p class="features-para">Dolorem est fugiat occaecati voluptate velit esse. Dicta veritatis dolor quod et vel dire leno para dest</p>
                     </div>
-                    <div class="features-list">
+                    <div class="col-lg-4 col-md-6 features-list">
                         <span>03</span>
                         <h3>Ad ad velit qui</h3>
                         <p class="features-para">Molestiae officiis omnis illo asperiores. Aut doloribus vitae sunt debitis quo vel nam quis</p>
                     </div>
-                </div>
-                
-                <div class="features-list-b">
-                    <div class="features-list1">
+                    <div class="col-lg-4 col-md-6 features-list">
                         <span>04</span>
                         <h3>Repellendus molestiae</h3>
                         <p class="features-para">Inventore quo sint a sint rerum. Distinctio blanditiis deserunt quod soluta quod nam mider lando casa</div>
-                    <div class="features-list1">
+                    <div class="col-lg-4 col-md-6 features-list">
                         <span>05</span>
                         <h3>Sapiente Magnam</h3>
                         <p class="features-para">Vitae dolorem in deleniti ipsum omnis tempore voluptatem. Qui possimus est repellendus est quibusdam</div>
-                    <div class="features-list1">
+                    <div class="col-lg-4 col-md-6 features-list">
                         <span>06</span>
                         <h3>Facilis Impedit</h3>
                         <p class="features-para">Quis eum numquam veniam ea voluptatibus voluptas. Excepturi aut nostrum repudiandae voluptatibus corporis sequi</div>
@@ -162,32 +206,31 @@
 
     <section class="clients">
         <div class="container">
-            <div class="flex-clients">
-                <div class="clients-list">
-                        <div class="client-list1">
-                            <span>232</span>
+            <div class="row flex-clients">
+                <div class="col-lg-3 col-md-6 mb-4 clients-list">
+                    <div class="client-list1">
+                        <span>232</span>
                         <p>happy client</p>
-                        </div> 
+                    </div> 
                 </div>
-                <div class="clients-list">
+                <div class="col-lg-3 col-md-6 mb-4 clients-list">
                     <div class="client-list1">
                         <span>521</span>
-                    <p>project</p>
+                        <p>project</p>
                     </div> 
-            </div>
-            <div class="clients-list">
-                <div class="client-list1">
-                    <span>1463</span>
-                <p>hours of support</p>
-                </div> 
-        </div>
-        <div class="clients-list">
-            <div class="client-list1">
-                <span>15</span>
-            <p>hard workers</p>
-            </div> 
-    </div>
-                
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4 clients-list">
+                    <div class="client-list1">
+                        <span>1463</span>
+                        <p>hours of support</p>
+                    </div> 
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4 clients-list">
+                    <div class="client-list1">
+                        <span>15</span>
+                        <p>hard workers</p>
+                    </div> 
+                </div>   
             </div>
         </div>
     </section>
@@ -198,8 +241,8 @@
     <section class="services">
         <div class="container">
             <h2>Services</h2>
-                <div class="services-sec">
-                    <div class="services-box">
+                <div class="row services-sec">
+                    <div class="col-lg-4 col-md-6 services-box">
                         <div class="services-content">
                             <div class="serivice-icon">
                                 <i class="icofont-ui-message"></i>
@@ -211,7 +254,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="services-box">
+                    <div class="col-lg-4 col-md-6 services-box">
                         <div class="services-content">
                             <div class="serivice-icon">
                                 <i class="icofont-brand-att"></i>
@@ -223,7 +266,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="services-box">
+                    <div class="col-lg-4 col-md-6 services-box">
                         <div class="services-content">
                             <div class="serivice-icon">
                                 <i class="icofont-globe"></i>
@@ -235,7 +278,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="services-box">
+                    <div class="col-lg-4 col-md-6 services-box">
                         <div class="services-content">
                             <div class="serivice-icon">
                                 <i class="icofont-network-tower"></i>
@@ -247,7 +290,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="services-box">
+                    <div class="col-lg-4 col-md-6 services-box">
                         <div class="services-content">
                             <div class="serivice-icon">
                                 <i class="icofont-sun-alt"></i>
@@ -259,7 +302,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="services-box">
+                    <div class="col-lg-4 col-md-6 services-box">
                         <div class="services-content">
                             <div class="serivice-icon">
                                 <i class="icofont-page"></i>
@@ -285,10 +328,18 @@
                 <h2>Our Portfolio</h2>
                 <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
             </div>
-            <div class="flex-portfolio">
-                <div class="portfolio-box">
+            <div class="portfolio-botton mb-4">
+                <ul>
+                    <li class="portfolio-all"><a href="">ALL</a></li>
+                    <li>APP</li>
+                    <li>CARD</li>
+                    <li>WEB</li>
+                </ul>
+            </div>
+            <div class="row flex-portfolio">
+                <div class="col-lg-4 col-md-6 portfolio-box">
                     <div class="portfolio-content">
-                        <img src="portfolio/portfolio-1.jpg" alt="portfolio-image">
+                        <img src="images/portfolio/portfolio-1.jpg" alt="portfolio-image">
                         <div class="portfolio-text">
                             <div class="portfolio-first-text">
                                 <h4>app</h4>
@@ -303,9 +354,9 @@
                     </div>
                     
                 </div>
-                <div class="portfolio-box">
+                <div class="col-lg-4 col-md-6 portfolio-box">
                     <div class="portfolio-content">
-                        <img src="/portfolio/portfolio-2.jpg" alt="portfolio-image">
+                        <img src="images/portfolio/portfolio-2.jpg" alt="portfolio-image">
                         <div class="portfolio-text">
                             <div class="portfolio-first-text">
                                 <h4>web 3</h4>
@@ -320,9 +371,9 @@
                     </div>
                     
                 </div>
-                <div class="portfolio-box">
+                <div class="col-lg-4 col-md-6 portfolio-box">
                     <div class="portfolio-content">
-                        <img src="/portfolio/portfolio-3.jpg" alt="portfolio-image">
+                        <img src="images/portfolio/portfolio-3.jpg" alt="portfolio-image">
                         <div class="portfolio-text">
                             <div class="portfolio-first-text">
                                 <h4>app 2</h4>
@@ -337,9 +388,9 @@
                     </div>
                     
                 </div>
-                <div class="portfolio-box">
+                <div class="col-lg-4 col-md-6 portfolio-box">
                     <div class="portfolio-content">
-                        <img src="/portfolio/portfolio-4.jpg" alt="portfolio-image">
+                        <img src="images/portfolio/portfolio-4.jpg" alt="portfolio-image">
                         <div class="portfolio-text">
                             <div class="portfolio-first-text">
                                 <h4>card 2</h4>
@@ -354,9 +405,9 @@
                     </div>
                     
                 </div>
-                <div class="portfolio-box">
+                <div class="col-lg-4 col-md-6 portfolio-box">
                     <div class="portfolio-content">
-                        <img src="/portfolio/portfolio-5.jpg" alt="portfolio-image">
+                        <img src="images/portfolio/portfolio-5.jpg" alt="portfolio-image">
                         <div class="portfolio-text">
                             <div class="portfolio-first-text">
                                 <h4>web 2</h4>
@@ -370,9 +421,9 @@
                         </div>
                     </div>
                     
-                </div><div class="portfolio-box">
+                </div><div class="col-lg-4 col-md-6 portfolio-box">
                     <div class="portfolio-content">
-                        <img src="/portfolio/portfolio-6.jpg" alt="portfolio-image">
+                        <img src="images/portfolio/portfolio-6.jpg" alt="portfolio-image">
                         <div class="portfolio-text">
                             <div class="portfolio-first-text">
                                 <h4>app 3</h4>
@@ -387,9 +438,9 @@
                     </div>
                     
                 </div>
-                <div class="portfolio-box">
+                <div class="col-lg-4 col-md-6 portfolio-box">
                     <div class="portfolio-content">
-                        <img src="/portfolio/portfolio-7.jpg" alt="portfolio-image">
+                        <img src="images/portfolio/portfolio-7.jpg" alt="portfolio-image">
                         <div class="portfolio-text">
                             <div class="portfolio-first-text">
                                 <h4>card 1</h4>
@@ -404,9 +455,9 @@
                     </div>
                     
                 </div>
-                <div class="portfolio-box">
+                <div class="col-lg-4 col-md-6 portfolio-box">
                     <div class="portfolio-content">
-                        <img src="/portfolio/portfolio-8.jpg" alt="portfolio-image">
+                        <img src="images/portfolio/portfolio-8.jpg" alt="portfolio-image">
                         <div class="portfolio-text">
                             <div class="portfolio-first-text">
                                 <h4>card 3</h4>
@@ -421,9 +472,9 @@
                     </div>
                     
                 </div>
-                <div class="portfolio-box">
+                <div class="col-lg-4 col-md-6 portfolio-box">
                     <div class="portfolio-content">
-                        <img src="/portfolio/portfolio-9.jpg" alt="portfolio-image">
+                        <img src="images/portfolio/portfolio-9.jpg" alt="portfolio-image">
                         <div class="portfolio-text">
                             <div class="portfolio-first-text">
                                 <h4>web 3</h4>
@@ -453,12 +504,12 @@
                 <h2>Our Team</h2>
                 <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem.</p>
             </div>
-            <div class="flex-profile">
+            <div class="row flex-profile">
                
-                <div class="profile-box">
+                <div class="col-lg-3 col-md-6 mb-5">
                     <div class="profile-sec">
                         <div class="profile-pic">
-                            <img src="/team/team-1.jpg" alt="profile" class="team-profile">
+                            <img src="images/team/team-1.jpg" alt="profile" class="team-profile">
                         </div>
                         <div class="profile-bio">
                             <h4>walter white</h4>
@@ -473,10 +524,10 @@
                         </div>
                     </div>
                 </div>
-                <div class="profile-box">
+                <div class="col-lg-3 col-md-6 mb-5">
                     <div class="profile-sec">
                         <div class="profile-pic">
-                            <img src="/team/team-2.jpg" alt="profile" class="team-profile">
+                            <img src="images/team/team-2.jpg" alt="profile" class="team-profile">
                         </div>
                         <div class="profile-bio">
                             <h4>Sarah Jhonson</h4>
@@ -491,10 +542,10 @@
                         </div>
                     </div>
                 </div>
-                <div class="profile-box">
+                <div class="col-lg-3 col-md-6 mb-5">
                     <div class="profile-sec">
                         <div class="profile-pic">
-                            <img src="/team/team-3.jpg" alt="profile" class="team-profile">
+                            <img src="images/team/team-3.jpg" alt="profile" class="team-profile">
                         </div>
                         <div class="profile-bio">
                             <h4>William Anderson</h4>
@@ -509,10 +560,10 @@
                         </div>
                     </div>
                 </div>
-                <div class="profile-box">
+                <div class="col-lg-3 col-md-6 mb-5">
                     <div class="profile-sec">
                         <div class="profile-pic">
-                            <img src="/team/team-4.jpg" alt="profile" class="team-profile">
+                            <img src="images/team/team-4.jpg" alt="profile" class="team-profile">
                         </div>
                         <div class="profile-bio">
                             <h4>Amanda Jepson</h4>
@@ -539,38 +590,38 @@
                 <div class="faq-title">
                     <h2>Frequently Asked Questions</h2>
                 </div>
-            <div class="flex-faq">
-                <div class="faq-box">
+            <div class="row">
+                <div class="col-lg-6">
                     <div class="faq-sec">
                         <h4>Non consectetur a erat nam at lectus urna duis?</h4>
                         <p>Feugiat pretium nibh ipsum consequat. Tempus iaculis urna id volutpat lacus laoreet non curabitur gravida. Venenatis lectus magna fringilla urna porttitor rhoncus dolor purus non.</p>
                     </div>
                 </div>
-                <div class="faq-box">
+                <div class="col-lg-6">
                     <div class="faq-sec">
                         <h4>Feugiat scelerisque varius morbi enim nunc faucibus a pellentesque?</h4>
                         <p>Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi. Id interdum velit laoreet id donec ultrices. Fringilla phasellus faucibus scelerisque eleifend donec pretium. Est pellentesque elit ullamcorper dignissim.</p>
                     </div>
                 </div>
-                <div class="faq-box">
+                <div class="col-lg-6">
                     <div class="faq-sec">
                         <h4>Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi?</h4>
                         <p>Eleifend mi in nulla posuere sollicitudin aliquam ultrices sagittis orci. Faucibus pulvinar elementum integer enim. Sem nulla pharetra diam sit amet nisl suscipit. Rutrum tellus pellentesque eu tincidunt. Lectus urna duis convallis convallis tellus.</p>
                     </div>
                 </div>
-                <div class="faq-box">
+                <div class="col-lg-6">
                     <div class="faq-sec">
                         <h4>Ac odio tempor orci dapibus. Aliquam eleifend mi in nulla?</h4>
                         <p>Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi. Id interdum velit laoreet id donec ultrices. Fringilla phasellus faucibus scelerisque eleifend donec pretium. Est pellentesque elit ullamcorper dignissim.</p>
                     </div>
                 </div>
-                <div class="faq-box">
+                <div class="col-lg-6">
                     <div class="faq-sec">
                         <h4>Tempus quam pellentesque nec nam aliquam sem et tortor consequat?</h4>
                         <p>Molestie a iaculis at erat pellentesque adipiscing commodo. Dignissim suspendisse in est ante in. Nunc vel risus commodo viverra maecenas accumsan. Sit amet nisl suscipit adipiscing bibendum est. Purus gravida quis blandit turpis cursus in</p>
                     </div>
                 </div>
-                <div class="faq-box">
+                <div class="col-lg-6">
                     <div class="faq-sec">
                         <h4>Tortor vitae purus faucibus ornare. Varius vel pharetra vel turpis nunc eget lorem dolor?</h4>
                         <p>Laoreet sit amet cursus sit amet dictum sit amet justo. Mauris vitae ultricies leo integer malesuada nunc vel. Tincidunt eget nullam non nisi est sit amet. Turpis nunc eget lorem dolor sed. Ut venenatis tellus in metus vulputate eu scelerisque.</p>
@@ -588,15 +639,15 @@
                 <div class="contact-title">
                     Contact Us
                 </div>
-            <div class="flex-contact-us">
-                <div class="address-box">
-                    <div class="address-box-content">
+            <div class="row flex-contact-us">
+                <div class="col-lg-6 mb-5">
+                    <div class="address-box-first">
                         <i class="icofont-google-map"></i>
                         <h4>Our Address</h4>
                         <p>A108 Adam Street, New York, NY 535022</p>
                     </div>
                 </div>
-                <div class="email-box">
+                <div class="col-lg-3 mb-5">
                     <div class="address-box-content">
                         <i class="icofont-ui-email"></i>
                         <h4>Email Us</h4>
@@ -604,7 +655,7 @@
                             contact@example.com</p>
                     </div>
                 </div>
-                <div class="call-box">
+                <div class="col-lg-3 mb-5">
                     <div class="address-box-content">
                         <i class="icofont-ui-call"></i>
                         <h4>Call Us</h4>
@@ -645,8 +696,8 @@
 
     <footer class="footer">
         <div class="container">
-            <div class="flex-footer">
-                <div class="footer-list">
+            <div class="row flex-footer">
+                <div class="col-lg-3 col-md-6 mt-4 footer-list">
                     <div class="footer-contact">
                         <a href="#" class="footer-logo">MAMBA</a>
                         <p>A108 Adam Street<br>
@@ -662,7 +713,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="footer-list">
+                <div class="col-lg-2 col-md-6 mt-4 footer-list">
                     <div class="footer-links">
                         <h4>Useful Links</h4>
                         <ul>
@@ -674,7 +725,7 @@
                         </ul>
                     </div>
                 </div>
-                <div class="footer-list">
+                <div class="col-lg-3 col-md-6 mt-4 footer-list">
                     
                         <h4>Our Services</h4>
                         <ul>
@@ -686,7 +737,7 @@
                         </ul>
                     
                 </div>
-                <div class="footer-list footer-newsletter">
+                <div class="col-lg-4 col-md-6 mt-4 footer-list footer-newsletter">
                     <h4>Our Newsletter</h4>
                     <p>Tamen quem nulla quae legam multos aute sint culpa legam noster magna</p>
                     <form class="footer-form">
@@ -704,15 +755,16 @@
     <section class="legel">
         <div class="container">
             <div class="flex-legel">
-                <p>© Copyright <strong>Mamba</strong>. All Rights Reserved</p><br>
-                <p>Designed by <a href="#">BootstrapMade</a>
-                </p>
+                <p>© Copyright <strong>Mamba</strong>. All Rights Reserved</p>
+                <span>Designed by <a href="#">BootstrapMade</a>
+                </span>
             </div>
         </div>
     </section>
 
     <!--legel ends-->
     
+<script src="js/bootstrap.bundle.min.js"></script>
     
 </body>
 </html>

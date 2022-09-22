@@ -4,12 +4,9 @@
     padding: 0;
     box-sizing: border-box;
 }
-.container{
-    width: 85%;
-    margin: auto;
-}
 .quick-contact{
     border-bottom: 1px solid rgb(0 0 0 / 6%);
+    background: #ffffff;
 }
 .flex-quick-contact{
     display: flex;
@@ -22,22 +19,27 @@
 .flex-quick-contact a{
     display: inline-block;
     text-decoration: none;
-    padding: 10px 0;
-    margin-left: 12px;
+    padding: 6px 0;
     color: #5c768d;
+    margin-right: 10px;
 }
 .mail-phone i{
     color: #428bca;
-    padding-right: 10px;
     font-size: 18px;
 }
 .socia-contact i{
-    font-size: 20px;
+    font-size: 17px;
+}
+.socia-contact a{
+    margin-left: 12px;
 }
 .flex-quick-contact a:hover{
     color: #428bca;
 }
-.flex-quick-access h2{
+
+/* -------nav sec------------ */
+
+/* .flex-quick-access h2{
     text-decoration: none;
     font-size: 22px;
     padding-top: 10px;
@@ -65,19 +67,77 @@
     left: 0;
     top: 100%;
     opacity: 0;
-   
 }
 .dropdown > ul >li{
     display: block;
-} 
+}  */
 
+.quick-access{
+	background: #ffffff;
+}
+.logo > a{
+	font-size:25px;
+	font-weight: lighter;
+	color: #605ee2;
+}
+.manu-list > ul > li{
+    padding-left: 20px;
+}
+.str-btn{
+    text-decoration: none;
+    padding: 7px 20px;
+    background: #5fcf80;
+    color: #ffffff;
+    border-radius: 50px;
+}
+.str-btn:hover{
+    color: #ffffff;
+}
+.manu-list ul li{
+    list-style: none;
+}
+.manu-list ul li a:hover{
+	color: #605ee2;
+}
+.manu-list ul li a{
+    text-decoration: none;
+    color: #37423b;
+    font-weight: 600;
+    transition: all 0.5s ease;
+}
+.drpdown{
+    position: relative;
+}
+.drpdown .droplink{
+    position: absolute;
+    top: 35px;
+    left: 0;
+    width: 180px;
+    background-color: #ffffff;
+    opacity: 0;
+    visibility: hidden;
+    box-shadow: 0 0 5px rgba(46, 35, 35, 0.568);
+    border-radius: 5px;
+	z-index: 5;
+}
+.drpdown ul{
+    padding-bottom: 10px;
+}
+.drpdown ul li{
+    padding-top: 10px;
+}
+.drpdown:hover .droplink{
+    opacity: 1;
+    visibility: visible;
+}
 
+/* ----------nav sec ends----- */
 .flex-banner{
     position: relative;
     display: flex;
     align-items: center;
     height: 500px;
-    background-image: url(/slide/slide-1.jpg);
+    background-image: url(../images/slide/slide-1.jpg);
     width: 100%;
     background-size: cover;
     background-repeat: no-repeat;
@@ -133,12 +193,11 @@
     display: flex;
     box-shadow: 0 0 10px rgb(206, 191, 191);
 }
-.about-section-image, .about-section-text{
-    width: 50%;
+.about-section-image{
+    padding: 10px;
 }
 .aboutimage{
     width: 100%;
-    padding: 10px;
 }
 .about-text-title{
     text-align: center;
@@ -148,11 +207,11 @@
     color: #5c768d;
     font-family: "raleway", sans-serif;
     font-size: 32px;
-    padding-bottom: 20px;
+    padding-bottom: 10px;
 }
 .about-text-title p{
     color: #666;
-    font-size: 18px;
+    font-size: 16px;
     text-align: left;
     padding-left: 30px;
     padding-right: 15px;
@@ -160,7 +219,7 @@
 }
 .about-list{
     display: flex;
-    padding-top: 40px;
+    padding-top: 20px;
     padding-left: 30px;
 }
 .about-icon{
@@ -183,7 +242,7 @@
 
 .about-text{
     width: 80%;
-    padding-left: 20px;
+    padding-left: 25px;
 }
 .about-text h3{
     font-size: 18px;
@@ -193,6 +252,7 @@
 }
 .about-text p{
     line-height: 23px;
+    font-size: 15px;
     color: #444;
     font-family: "Open Sans", sans-serif;
 }
@@ -206,46 +266,21 @@
 /* ---------------------about section ends---------- */
 /* -------features section starts------------------ */
 
-
-.features-list-a, .features-list-b{
-    display: flex;
-    width: 100%;
- 
-}
 .features-list{
-    width: 33.33%;
-    padding-left: 40px;
-    padding-top: 20px;
-    border: solid 1px #d9e8f4;
-    border-top: 0;
+    padding: 40px;
+    border-left: solid 1px #d9e8f4;
+    border-bottom: solid 1px #d9e8f4;
+    margin: -1px;
 }
 .features-para{
     font-family: "Segoe UI", system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-size: 15px;
     line-height: 25px;
-    padding-right: 60px;
-    padding-bottom: 25px;
     color: #aaaaaa;
-}
-.features-list:nth-child(1),
-.features-list1:nth-child(1){
-    border-left: 0;
-}
-.features-list:nth-child(3),
-.features-list1:nth-child(3){
-    border-right: 0;
-}
-.features-list1{
-    width: 33.33%;
-    padding-left: 40px;
-    padding-top: 40px;
-    border: solid 1px #d9e8f4;
-    border-bottom: 0;
 }
 .flex-features span{
     font-size: 25px;
     color: #9eccf4;
-    padding-top: 30px;
 }
 .flex-features{
     padding-top: 40px;
@@ -255,8 +290,7 @@
     font-family:  "Raleway", sans-serif;
     color: #444;
     font-size: 25px;
-    padding-top: 30px;
-    padding-bottom: 30px;
+    margin: 30px 0;
 }
 
 /* ---------------features sec ends--------------------- */
@@ -269,15 +303,10 @@
     padding-top: 60px;
     padding-bottom: 60px;
 }
-.flex-clients{
-    display: flex;
-}
-.clients-list{
-    width: 25%;
+/* .clients-list{
     padding-left: 15px;
     padding-right: 15px;
-   
-}
+} */
 .client-list1{
     background-color: white;
     text-align: center;
@@ -316,14 +345,14 @@
     color: #5c768d;
     padding-bottom: 40px;
 }
-.services-sec{
+/* .services-sec{
     display: flex;
     flex-wrap: wrap;
-}
-.services-sec .services-box{
+} */
+/* .services-sec .services-box{
     width: 33.33%;
     
-}
+} */
 .services-content{
     padding-top: 20px;
     padding: 15px;
@@ -386,7 +415,6 @@
 .portfolio{
     background-color: #f5f9fc;
 }
-
 .portfolio-title h2{
     display: flex;
     justify-content: center;
@@ -407,23 +435,14 @@
     text-align: center;
     padding-bottom: 25px;
 }
-
-
 .flex-portfolio{
-    display: flex;
-    flex-wrap: wrap;
     padding-bottom: 80px;
-}
-.portfolio-box{
-    width: 33.33%;
-   
-    
 }
 .portfolio-content{
     display: flex;
     position: relative;
     overflow: hidden;
-    margin: 10px;
+    margin-bottom: 25px;
 }
 .portfolio-content img{
     display: block;
@@ -530,15 +549,36 @@
     color: #444;
     padding-bottom: 20px;
 }
+.portfolio-botton ul{
+    display: flex;
+    justify-content: center;
+}
+.portfolio-botton ul li a{
+    text-decoration: none;
+    color: #fff;
+}
+.portfolio-botton ul li{
+    display: inline-block;
+    margin: 0 10px;
+    padding: 10px 20px;
+    background-color: #fff;
+    font-size: 12px;
+    font-family: "Open Sans", sans-serif;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: all 0.5s ease;
+}
+.portfolio-botton .portfolio-all{
+    background-color: #428bca;
+    color: #fff;
+}
+.portfolio-botton ul li:hover {
+    background-color: #428bca;
+    color: #fff;
+}
 
 .flex-profile{
-    display: flex;
-    flex-wrap: wrap;
     padding-bottom: 80px;
-}
-.profile-box{
-    width: 25%;
-    
 }
 .profile-sec{
     position: relative;
@@ -621,14 +661,6 @@
     color: #5c768d;
     font-family: "Raleway", sans-serif,"Open Sans", sans-serif;
 }
-
-.flex-faq{
-    display: flex;
-    flex-wrap: wrap;
-}
-.faq-box{
-    width: 50%;
-}
 .faq-sec{
     padding: 10px;
     margin-bottom: 40px;
@@ -662,13 +694,33 @@
     padding-top: 50px;
     padding-bottom: 25px;
 }
-
-.flex-contact-us{
-    display: flex;
+.address-box-first{
+    display: block;
+    justify-content: center;
+    text-align: center;
+    box-shadow: 0 0 30px rgb(214 215 216 / 60%);
+    padding-top: 30px;
+    padding-bottom: 34px;
 }
-.address-box{
-    width: 50%;
-    padding: 10px;
+.address-box-first i{
+    font-size: 25px;
+    color: #428bca;
+    border: 2px dotted #9eccf4;
+    border-radius: 100%;
+    padding: 6px;
+}
+.address-box-first h4{
+    font-size: 18px;
+    color: #666;
+    font-family: "Raleway", sans-serif;
+    margin-top: 20px;
+}
+.address-box-first p{
+    line-height: 25px;
+    margin-top: 10px;
+    font-size: 14px;
+    font-family: "Open Sans", sans-serif;
+    color: #444;
 }
 .address-box-content{
     display: block;
@@ -676,7 +728,7 @@
     text-align: center;
     box-shadow: 0 0 30px rgb(214 215 216 / 60%);
     padding-top: 30px;
-    padding-bottom: 30px;
+    padding-bottom: 10px;
 }
 .address-box-content i{
     font-size: 25px;
@@ -685,25 +737,16 @@
     border-radius: 100%;
     padding: 6px;
 }
-.email-box{
-    width: 25%;
-    padding: 10px;
-}
-.call-box{
-    width: 25%;
-    padding: 10px;
-}
 .address-box-content h4{ 
-    font-size: 22px;
+    font-size: 18px;
     color: #666;
     font-family: "Raleway", sans-serif;
     margin-top: 20px;
-    margin-bottom: 10px;
 }
 .address-box-content p{
     line-height: 25px;
     margin-top: 10px;
-    font-size: 15px;
+    font-size: 14px;
     font-family: "Open Sans", sans-serif;
     color: #444;
 }
@@ -722,27 +765,21 @@
 
 /* -------form section------ */
 
-/* .container{
-    padding-bottom: 20px;
-} */
 
 .flex-form{
-    margin: 0 10px;
     box-shadow: 0 0 30px rgb(214 215 216 / 60%);
+    margin-bottom: 30px;
 }
-
 .form-sec{
     display: flex;
     flex-wrap: wrap;
-    padding-top: 30px;
+    padding: 30px;
 }
 .type50{
     width: 50%;
-    padding: 0 25px;
 }
 .type100{
     width: 100%;
-    padding: 0 25px;
 }
 .user-input{
     width: 100%;
@@ -757,6 +794,9 @@
 .from-group{
     margin-bottom: 20px;
 }
+.from-group:first-child .user-input{
+    width: 95%;
+}
 .from-group textarea {
     height: 150px;
     resize: none;
@@ -765,11 +805,10 @@
     width: 100%;
     display: flex;
     justify-content: center;
-    padding-bottom: 30px;
 }
 .from-button button{
-    padding: 15px 40px;
-    font-size: 17px;
+    padding: 10px 30px;
+    font-size: 16px;
     background-color: #428bca;
     border: 0;
     color: #fff;
@@ -782,22 +821,7 @@
 
 .footer{
     background-color: #587187;
-    padding-top: 60px;
-    padding-bottom: 50px;
-}
-.flex-footer{
-    display: flex;
-    flex-wrap: wrap;
-}
-.footer-contact{
-    padding-left: 15px;
-}
-.footer-list{
-    flex: 1 0 0;
-}
-.footer-newsletter{
-    flex: 0 0 auto;
-    width: 33%;
+    padding: 30px 0;
 }
 .footer-list .footer-logo{
     text-decoration: none;
@@ -829,9 +853,6 @@
 .footer-social-link a:hover{
     background-color: #428bca;
 }
-.footer-links{
-    padding-left: 35px;
-}
 .footer-list h4{
     color: #fff;
     font-size: 20px;
@@ -840,6 +861,7 @@
 }
 .footer-list ul{
     list-style: none;
+    padding: 0;
 }
 .footer-list ul li a{
     text-decoration: none;
@@ -899,4 +921,9 @@
     color: #fff;
     font-family: "Open Sans", sans-serif;
     font-size: 14px;
+    margin-bottom: 3px;
+}
+.legel span{
+    font-size: 14px;
+    color: #ffffff;
 }
