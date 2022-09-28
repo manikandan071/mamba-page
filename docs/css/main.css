@@ -21,7 +21,6 @@
     text-decoration: none;
     padding: 6px 0;
     color: #5c768d;
-    margin-right: 10px;
 }
 .mail-phone i{
     color: #428bca;
@@ -39,97 +38,165 @@
 
 /* -------nav sec------------ */
 
-/* .flex-quick-access h2{
-    text-decoration: none;
-    font-size: 22px;
-    padding-top: 10px;
-    color: #444;
-    font-family: "Open Sans", sans-serif;
+.navbar-sec{
+    padding: 10px 0;
 }
-.quick-access-manu > .manu-nav > li{
-    display: inline;
+#tglbtn{
+    padding: 0 10px;
+    background: transparent;
+    border: none;
+    font-size: 20px;
+}
+ ul li a:hover{
+    color: #428bca;
+}
+@media (min-width: 921px){
+    .logo a{
+        text-decoration: none;
+        font-size: 25px;
+        font-weight: lighter;
+        color: #1c5c93;
+    }
+    .logo{
+        display: flex;
+        align-items: center;
+    }
+    .manubar{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .tgl{
+        display: none;
+    }
+    .manu-list{
+        display: block;
+    }
+    .manu-list a{
+        text-decoration: none;
+        color: #5c768d;
+        transition: all 0.5s ease;
+    }
+    .manu-list ul{
+        padding: 0;
+        margin-bottom: 0;
+    }
+    .manu-list >ul >li{
+        list-style: none;
+        display: inline-block;
+        padding-left: 28px;
+    }
+    .manu-phone{
+        display: none!important;
+    }
+    .dropdown-a{
+        position: relative;
+    }
+    .downlist{
+        content: "";
+        position: absolute;
+        width: 200px;
+        top: 25px;
+        left: 14px;
+        background: #fff;
+        z-index: 11;
+        box-shadow: 0px 0px 30px rgb(127 137 161 / 25%);
+        border-radius: 5px;
+        opacity: 0;
+        visibility: hidden;
+    }
+    .downlist li{
+        display: block;
+        padding: 10px 20px;
+    }
+    .dropdown-a:hover .downlist{
+        opacity: 1;
+        visibility: visible;
+    }
+}
+@media (max-width: 920px){
 
+    .logo a{
+        text-decoration: none;
+        font-size: 25px;
+        font-weight: lighter;
+        color: #1c5c93;
+    }
+.manubar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
-.quick-access-manu .manu-nav a{
-    display: inline-block;
+.manu-list{
+    display: none;
+}
+.manu-phone{ 
+    display: none;
+    background-color: #fff;
+}
+.manu-phone a{
     text-decoration: none;
-    text-align: center;
-   padding: 15px 0 15px 30px;
-    font-size: 18px;
-    color: #444;
-}
-.dropdown{
-    position: relative;
-}
-.dropdown .drop-nav{
-    display: block;
-    position: absolute;
-    left: 0;
-    top: 100%;
-    opacity: 0;
-}
-.dropdown > ul >li{
-    display: block;
-}  */
-
-.quick-access{
-	background: #ffffff;
-}
-.logo > a{
-	font-size:25px;
-	font-weight: lighter;
-	color: #605ee2;
-}
-.manu-list > ul > li{
-    padding-left: 20px;
-}
-.str-btn{
-    text-decoration: none;
-    padding: 7px 20px;
-    background: #5fcf80;
-    color: #ffffff;
-    border-radius: 50px;
-}
-.str-btn:hover{
-    color: #ffffff;
-}
-.manu-list ul li{
-    list-style: none;
-}
-.manu-list ul li a:hover{
-	color: #605ee2;
-}
-.manu-list ul li a{
-    text-decoration: none;
-    color: #37423b;
-    font-weight: 600;
+    color: #5c768d;
     transition: all 0.5s ease;
 }
-.drpdown{
+.manu-phone ul{
+    padding: 0;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+}
+.manu-phone ul li{
+    list-style: none;
+    display: block;
+    padding: 10px 0;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+}
+.tgl{
+    display: block;
+}
+.dropdown-a{
     position: relative;
 }
-.drpdown .droplink{
-    position: absolute;
-    top: 35px;
-    left: 0;
-    width: 180px;
-    background-color: #ffffff;
-    opacity: 0;
-    visibility: hidden;
-    box-shadow: 0 0 5px rgba(46, 35, 35, 0.568);
+.downlist{
+    /* position: static; */
+    width: 100%;
+    top: 30px;
+    left: 14px;
+    background: #fff;
+    z-index: 11;
+    box-shadow: 0px 0px 30px rgb(127 137 161 / 25%);
     border-radius: 5px;
-	z-index: 5;
+    opacity: 0;
+    display: none;
 }
-.drpdown ul{
-    padding-bottom: 10px;
+.downlist li{
+    display: block;
+    padding: 10px 20px;
 }
-.drpdown ul li{
-    padding-top: 10px;
-}
-.drpdown:hover .droplink{
+.dropdown-a:hover .downlist{
     opacity: 1;
-    visibility: visible;
+    display: block;
 }
+
+
+}
+@keyframes transitionIn{
+    from{
+        opacity: 0;
+        transform: translateY(100px);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+
 
 /* ----------nav sec ends----- */
 .flex-banner{
