@@ -1,5 +1,8 @@
 @media (max-width: 767px){
 
+.mail-phone{
+	font-size:13px;
+}
 .manu-list{
     text-align: center;
     padding: 0;
