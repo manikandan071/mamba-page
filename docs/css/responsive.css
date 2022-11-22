@@ -31,6 +31,17 @@
 .from-group:first-child .user-input{
     width: 100%;
 }
+.portfolio-botton ul li{
+    display: inline-block;
+    margin: 0 10px;
+    padding: 5px 10px;
+    background-color: #fff;
+    font-size: 12px;
+    font-family: "Open Sans", sans-serif;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: all 0.5s ease;
+}
 
 }
 @media (max-width: 991px){
